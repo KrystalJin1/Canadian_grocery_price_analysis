@@ -4,7 +4,7 @@ author:
   - Jin Zhang
   - Yi Tang
   - Siyuan Lu
-thanks: "Code and data are available at: https://github.com/YiTang2/Canadian-grocery-price.git"
+thanks: "Code and data are available at: https://github.com/KrystalJin1/Canadian_grocery_price_analysis.git"
 date: 21 November 2024
 date-format: long
 abstract: "In this paper, we collect old grocery data from the top Canadian grocery sector, clean it, and analyze the pricing strategies. Many items have remained the same price or become cheaper, showing that grocery vendors tend to use competitive pricing strategies. The research can help drive more competition and reduce collusion in the Canadian grocery sector."
@@ -107,7 +107,6 @@ plot <- ggplot(vendor_price_changes, aes(x = vendor, y = Price, fill = Price_Typ
   scale_fill_manual(values = c("Average_Current_Price" = "orange", "Average_Old_Price" = "skyblue"),
                     labels = c("Average Current Price", "Average Old Price")) +
   labs(
-    title = "Comparison of Average Old and Current Prices by Vendor",
     x = "Vendor",
     y = "Price",
     fill = "Price Type"
